@@ -11,5 +11,4 @@ output "rancher_nodes" {
       roles      = split(",", instance.tags.K8sRoles)
     }
   ]
-  sensitive = true
 }
