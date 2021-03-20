@@ -19,6 +19,6 @@ locals {
     %{ if var.register_command != "" }"${var.register_command} --worker"%{ endif }
   EOT
   tags = {
-    TFModule = "${var.prefix}"
+    TFModule = var.prefix
   }
 }
